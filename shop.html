@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Same head as index.html -->
+    <title>Shop - PinkGlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include header same as index.html -->
+    
+    <section class="shop-page">
+        <div class="container">
+            <div class="shop-header">
+                <h1 class="page-title">Our Collection</h1>
+                <div class="shop-filters">
+                    <select class="filter-select">
+                        <option>Kategori</option>
+                        <option>Lipstick</option>
+                        <option>Eyeshadow</option>
+                        <option>Foundation</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Urutkan</option>
+                        <option>Harga Terendah</option>
+                        <option>Harga Tertinggi</option>
+                        <option>Terbaru</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product cards will be generated here -->
+                <div class="product-card" data-id="1">
+                    <div class="product-image">
+                        <img src="https://image.femaledaily.com/dyn/210/images/prod-pics/c1de9cba96d97c0f73883c1942a6252f.jpg" alt="Lipstick">
+                    </div>
+                    <div class="product-info">
+                        <h3>Velvet Matte Lipstick</h3>
+                        <div class="product-price">Rp 149.000</div>
+                        <button class="add-to-cart" onclick="addToCart(1)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="2">
+                    <div class="product-image">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lyk45qhrtuthf8@resize_w900_nl.webp" alt="Eyeshadow">
+                    </div>
+                    <div class="product-info">
+                        <h3>Eyeshadow Matte</h3>
+                        <div class="product-price">Rp 285.000</div>
+                        <button class="add-to-cart" onclick="addToCart(1)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Lipstick">
+                    </div>
+                    <div class="product-info">
+                        <h3>Velvet Matte Lipstick</h3>
+                        <div class="product-price">Rp 149.000</div>
+                        <button class="add-to-cart" onclick="addToCart(1)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                <!-- Repeat for more products -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Include footer -->
+    <script src="script.js"></script>
+</body>
+</html>
